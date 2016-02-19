@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Slider, Slides, PrevArrow, NextArrow, Dots } from '../src';
 
 import './index.css';
@@ -180,4 +179,4 @@ class SetSlide extends Component {
 
 export default App;
 
-ReactDOM.render(<App />, document.getElementById('root'));
+React.render(<App />, document.getElementById('root'));

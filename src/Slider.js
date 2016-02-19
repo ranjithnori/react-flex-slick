@@ -155,7 +155,7 @@ class Slider extends Component {
     // FIXME Breaks compatibility with react-0.13 may be use id to this.
     // Doesn't require a style recalc as the actions happens after component is
     // mounted or updated
-    const slider = this.refs.slider;
+    const slider = React.findDOMNode(this.refs.slider);
     const sliderRect = slider.getBoundingClientRect();
     const trackRect = slider.children[1].children[0].getBoundingClientRect();
     const maxSwipeLength = vertical === false ? trackRect.width : trackRect.height;
